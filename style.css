@@ -38,23 +38,33 @@ body{
     color: var(--neutral-dark-blue);
     font-family: 'poppins';
     font-weight: 400;
+    font-size: 15px;
+}
+h1{
+    font-size: 1.5rem;
+    color: var(--neutral-dark-blue);
+}
+p:not(.header__text){
+    color: var(--neutral-grayish-blue);
+    font-size: .825rem;
 }
 .container{
     width: 85%;
     height: 100vh;
     max-inline-size: 1200px;
-    margin: 100px auto;
+    margin: 6rem auto;
 }
 header{
     text-align: center;
     line-height: 1.5;
+    color: var(--neutral-grayish-blue);
 }
 .header__title span{
     font-weight: 200;
-    letter-spacing: .6px;
+    letter-spacing: .5px;
 }
 .header__text{
-    padding-block: 2rem;
+    padding-block: 1rem 5rem;
 }
 .cards{
     display: grid;
