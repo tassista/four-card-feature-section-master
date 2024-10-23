@@ -95,7 +95,20 @@ header{
     align-self: flex-end;
     padding-block-start: 2rem;
 }
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 650px){
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card{
+        grid-column: span 2;
+    }
+    .supervisor,
+    .karma{
+        grid-column: 2/4;
+    }
+}
+
+@media screen and (min-width: 1100px) {
     .header__text{
         width: 50%;
         margin: 0 auto;
@@ -106,6 +119,11 @@ header{
     }
     .card{
         grid-row: span 2;
+        grid-column: initial;
+    }
+    .supervisor,
+    .karma{
+        grid-column: initial;
     }
     .supervisor{
         grid-row: 2/4;
